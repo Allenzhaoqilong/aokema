@@ -1,0 +1,34 @@
+@charset "utf-8";
+html,body,p,ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,form,input,fieldset,legend,table,tr,td{
+	margin:0;
+	padding:0;
+}
+body{
+	font-size:16px;
+}
+h1,h2,h3,h4,h5,h6,b,strong,i,em{
+	font-weight:normal;
+	font-style:normal;
+}
+a{
+	text-decoration: none;
+	/* color:#000; */
+}
+ul,ol{
+	list-style:none;
+}
+img,fieldset{
+	border:none;
+	vertical-align: middle;
+}
+.clearfn:after{
+	content:"";
+	display: block;
+	clear:both;
+	height:0;
+	overflow:hidden;
+	visibility: hidden;
+}
+.clearfn{
+	zoom:1;
+}

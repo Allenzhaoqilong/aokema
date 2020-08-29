@@ -1,0 +1,489 @@
+@charset "utf-8";
+html{
+    width:100%;
+    height:100%;
+}
+body{
+    background-image: url(./bg.jpg);
+}
+
+header,aside,main{
+    width:1336px;
+    height:100%;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    margin:auto;
+}
+/* 头 */
+header{
+        height:45px;
+        width:100%;
+        font-size: 13px;
+        background:#D90013;
+        display: flex;
+        justify-content: space-between;
+        }
+header span{
+    display: inline;
+    height: 45px;
+    line-height: 45px;
+    padding:14px 5px;
+}
+header i{
+    padding:5px 2px;
+    background: url(icon2.png) no-repeat;
+}
+
+header .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+header .dropdown a{
+    color: white;
+}
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e70c0c;
+    min-width: 60px;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.7);
+    padding: 8px 2px;
+  }
+  header .dropdown-content p{
+      min-height: 30px;
+      border-bottom: 1px solid black;
+  }
+ header .dropdown:hover .dropdown-content {
+    display: block;
+    background-color:rgba(255, 6, 22, 0.8) ;
+  }
+  header .dropdown:hover{
+      background-color: brown;
+  }
+
+
+header #header-left{
+    margin-left: 80px;
+    float: left;
+    width: 480px;
+    text-align: center;
+}
+header #header-centre{
+    float: left;
+    margin-right: 50px;
+}
+header #header-centre .dropdown .dropdown-content p{
+    width: 120px;
+    height:120px;
+}
+header #header-centre .dropdown .dropdown-content p img{
+    width: 100%;
+    height: 100%;
+
+}
+header #header-right{
+    margin-right:100px;
+    width: 200px;
+    float: left;
+    text-align: center;
+}
+
+
+
+/* 中部 */
+
+aside{
+    /* width:100%; */
+    height: 742px;
+    /* overflow: hidden; */
+}
+#aside-left{
+    width:245px;
+    height:738px;
+    margin-left:60px;
+    float: left;
+    background-color: white;
+}
+#aside-left h6{
+    position: relative;
+    display: inline-block;
+    width: 217px;
+    height: 50px;
+    border-bottom: 1px solid black;
+    padding:20px 0 0 30px;
+    float: left;
+    font-size: 15px;
+}
+#aside-left h6 a{
+    color: black;
+}
+#aside-left h6 a span{
+    margin-right: 20px;
+    padding: 4px;
+    font-size: 25px;
+    border-radius: 50%;
+    
+}
+#aside-left h6 ul{
+    position: absolute;
+    top: -20px;
+    left: 230px;
+    width: 150px;
+    padding:0 10px 30px;
+    background-color:white;
+    box-shadow: 0px 8px 8px 0px rgba(202, 198, 198, 0.8);
+    z-index: 1;
+    display:none;
+}
+#aside-left h6:hover ul{
+    display:block;
+}
+#aside-left h6:hover a span{
+    background-color: red;
+    opacity: 0.2;
+}
+#aside-left h6 ul li{
+    font-size: 15px;
+    line-height: 50px;
+    opacity: 0.8;
+    border-bottom: 1px solid black;
+}
+
+
+
+
+
+
+
+
+#aside-right{
+    float: left;
+    /* position: relative; */
+    margin:10px 0 0 10px;
+}
+#aside-right input{
+    width: 800px;
+    height: 40px;
+    margin-top: 30px;
+    border:2px solid red;
+    font-size:18px;
+    padding-left:10px;
+    float: left;
+}
+#aside-right .span{
+    float: left;
+    display: block;
+    margin-top: 30px; 
+    width: 40px;
+    height: 40px;
+    /* font-size: 15px; */
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border:2px solid red;
+    background-color: red;
+}
+
+#aside-right ul{
+    float: left;
+}
+#aside-right ul span{
+    line-height: 45px;
+    font-size: 12px;
+    margin-right: 20px;
+}
+#aside-right ul span a{
+    color: black;
+}
+#aside-right ul span a:hover{
+    font-size: 15px;
+    color: red;
+    line-height: 45px;
+}
+#aside-right .banner{
+    width: 947px;
+    height:600px;
+    margin-top: 120px;
+    position: absolute;
+    overflow: hidden;
+   
+}
+
+#aside-right .banner > ul {
+    width: 700%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -947px;
+    
+  }
+  
+#aside-right  .banner > ul > li {
+    width: 947px;
+    height: 100%;
+    float: left;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #aside-right  .banner > ul > li img{
+      width: 100%;
+  }
+  
+#aside-right .banner > ol {
+    height: 20px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 10px;
+  
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+#aside-right .banner > ol > li {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+#aside-right .banner > ol > li.active {
+    background-color: skyblue;
+  }
+  
+#aside-right .banner > div {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+#aside-right .banner > div > a {
+    width: 20px;
+    height: 40px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(125, 13, 21, 0.4);  
+}
+
+main{
+    height:1550px;
+    overflow: hidden;
+}
+main #venue{
+    min-height:400px;
+}
+main #venue li{
+    width: 284px;
+    height: 284px;
+    float: left;
+    line-height: 400px;
+    margin: 10px;
+}
+main #venue li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: #999999;
+    opacity:0.8;
+}
+main #venue li img:hover{
+    border-color:#999999;
+    /* box-shadow: white; */
+    opacity: 1;
+    }
+main #venue li:first-child{
+    margin-left: 62px;
+}
+main #know {
+   height: 485px;
+   background-color:white;   
+}
+main #know li{
+    float: left;
+    margin:0 20px;
+}
+main p{
+    font-size: 20px;
+    margin-top: 50px;
+    
+}
+main .minbanner{
+    margin-left:30px;
+    width:1269px;
+    height:250px;
+    position: absolute;
+    overflow: hidden;   
+}
+  
+main .minbanner > ul {
+    width: 700%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    
+  }
+  
+main  .minbanner > ul > li {
+    width: 200px;
+    height: 100%;
+    float: left;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main  .minbanner > ul > li img{
+      width: 100%;
+  }
+  
+main .minbanner > div {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+main .minbanner > div > a {
+    width: 20px;
+    height: 40px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(125, 13, 21, 0.4);  
+}
+main #video{
+    margin-top:240px;
+}
+main #aucnm li{
+    float: left;
+    width: 300px;
+    height: 230px;
+    margin:10px 15px 0;
+    background-color: white;
+}
+main #aucnm li img{
+    width: 100%;
+    height: 100%;
+}
+main #aucnm li span{
+    line-height: 40px;
+    padding-left: 60px;
+    
+}
+
+/* 尾 */
+footer{
+    height: 170px;
+    background-color:#E5E5E5;
+    width: 100%;
+}
+footer ul{
+    float: left;
+    margin-left: 200px;
+    
+}
+footer ul li:nth-child(1){
+    color:red;
+    margin:20px 0;
+}
+/* tail */
+#tail{
+    height:130px;
+    color:#c8c8c8;
+    background-color:#383838;
+}
+#tail ul{
+    overflow: hidden;
+    width:100%;
+    height: 40%;
+}
+#tail ul li{
+    float: left;
+    width:100px;
+    border-right:2px solid #c8c8c8;
+    margin:20px 0 0 30px;
+}
+#tail ul li:nth-child(1){
+    margin-left: 100px;
+}
+#tail ul li:nth-child(3){
+    border:0px ;
+}
+#tail p{
+    margin-left:100px ;
+}
+#buffer {
+    width: 84px;
+    background-color: rgb(242, 241, 248);
+    position: absolute;
+    right: 0px;
+    border-radius:50%;
+  }
+#buffer div:nth-child(2){
+    width: 84px;
+    height: 33px;
+    background-color: red;
+    color: white;
+    text-align:center;
+    line-height: 33px;
+    margin-top: 5px;
+}
+#buffer div:nth-child(3),#buffer div:nth-child(4){
+    width: 83px;
+    height: 33px;
+    text-align:center;
+    line-height: 33px;
+    background-color: white;
+    border:1px dashed black;
+}
+#buffer div:nth-child(3):hover,#buffer div:nth-child(4):hover{
+    background-color: red;
+}
+#buffer div:last-child{
+    width:85px;
+    height: 82px;
+    background-color: red;
+    line-height: 82px;
+    text-align: center;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+#buffer div:last-child a{
+    color: white;
+}
+
+
+
+
